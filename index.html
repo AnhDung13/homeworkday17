@@ -46,8 +46,8 @@
       var a = 5,
         b = 15,
         c = 10;
-      var S = a < b ? (a < c ? a : c) : b < c ? b : c;
-      var L = a > b ? (a > c ? a : c) : b > c ? b : c;
+      var S = (min = a < b ? a : b) < c ? min : c;
+      var L = (max = a > b ? a : b) > c ? max : c;
       var M = a + b + c - S - L;
 
       console.log("bài 5:", S, M, L);
