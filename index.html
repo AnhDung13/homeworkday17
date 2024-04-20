@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập buổi 17</title>
+  </head>
+  <body>
+    <h1>Bài tập buổi 17</h1>
+    <!-- bài 1 -->
+    <script>
+      var a = 10,
+        b = 5;
+      a += b;
+      b = a - b;
+      a -= b;
+      console.log("bài 1: ", a, b);
+    </script>
+    <!--  -->
+    <!-- bài 2 -->
+    <script>
+      var S = 10 + 20 + (5 ^ 10) / 2;
+      console.log("Bài 2: S = ", S);
+    </script>
+    <!--  -->
+    <!-- bài 3 -->
+    <script>
+      var a = 8,
+        b = 9,
+        c = 11;
+      var result = (max = a > b ? a : b) > c ? max : c;
+      console.log("Bài 3: số lớn nhất ", result);
+    </script>
+    <!--  -->
+    <!-- bài 4 -->
+    <script>
+      var a = -1,
+        b = 9;
+      result =
+        (a > 0 && b > 0) || (a < 0 && b < 0)
+          ? "a và b cùng dấu"
+          : "a và b khác dấu";
+
+      console.log("Bài 4:", a, b, result);
+    </script>
+    <!--  -->
+    <!-- bài 5 -->
+    <script>
+      var a = 5,
+        b = 15,
+        c = 10;
+      var S = a < b ? (a < c ? a : c) : b < c ? b : c;
+      var L = a > b ? (a > c ? a : c) : b > c ? b : c;
+      var M = a + b + c - S - L;
+
+      console.log("bài 5:", S, M, L);
+    </script>
+  </body>
+</html>
